@@ -1,0 +1,178 @@
+
+/*Big tablet to 1200px (widths smaller than the 1140px row)*/
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row { padding: 0 2%; }
+}
+
+
+
+/*small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px; }
+    section { padding: 60px 0; }
+    .long-copy {
+        line-height: 145%;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .section-call-to-action {
+        height: 25vh;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .call-to-action-heading {
+        font-size: 180%;
+    }
+    .section-testimonals { height: 75vh; }
+    .section-circle { 
+        height: 450px; 
+        width: 450px; 
+    }
+}
+
+
+/* Phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+    body { font-size: 16px; }
+    section { padding: 30px 0; }
+    .row,
+    .hero-text-box { padding: 0 4%; }
+
+    .col { width: 100%; }
+
+    .long-copy { 
+        margin-left: 10%; 
+        margin-right: 10%;
+    }
+
+    /* .main-nav { display: none }
+    
+    .mobile-nav-icon {display: inline-block}
+    
+    .main-nav { 
+        float: left; 
+        margin-top: 35px;
+        margin-left: 25px;
+    }
+    
+    .main-nav li { display: block; }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+
+        
+    .sticky .main-nav { margin-top: 10px; }
+
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { padding: 10px 0; }
+    .sticky .mobile-nav-icon i { color: #555 }   
+    .sticky .mobile-nav-icon { margin-top: 10px; }  */
+
+    .main-nav { display: none; }
+    .mobile-nav-icon {
+        display: inline-block;
+        position: relative;
+        z-index: 9999;
+    }
+
+    .main-nav {
+        float: none;
+        position: absolute;
+        z-index: 8888;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        margin-left: -4%;
+        background-color: rgba(29, 29, 29, 0.92);
+        text-align: center;
+        padding-top: 20vh;
+    }
+
+    .main-nav li {
+        display: block;
+        margin-left: 0;
+        font-size: 110%;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+
+    
+    .sticky .main-nav { margin-top: 0; }
+    
+    
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 10px 0;
+        color: #fff;
+    }
+    
+    
+    
+    .sticky .mobile-nav-icon { margin-top: 10px; }
+    .sticky .mobile-nav-icon i { color: #555; }
+    .sticky .mobile-nav-icon i.ion-close-round { color: #555; }
+
+    .section-testimonals { height: 127.5vh; }
+    
+
+    h1 { font-size: 180%;}
+    h2 { font-size: 150%;}
+    .section-call-to-action h3 { text-align: center; }
+
+    blockquote {
+        margin-top: 25px;
+    }
+
+    .btn-white {
+        position: relative;
+        bottom: 30px;
+        left: 30%;
+    }
+
+    .section-circle {
+        height: 350px;
+        width: 350px;
+      }
+} 
+
+
+
+/* SMALL PHONES: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    .section-testimonals { height: 124vh; }
+
+    .call-to-action-heading { font-size: 130%; }
+
+    .section-testimonals { height: 160vh; }
+
+    .footer__nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer__social {
+        margin-top: 15px;
+    }
+
+    .footer__copyright { margin-top: 15px; }
+  
+
+}

@@ -1,0 +1,659 @@
+/*--- Turquoise color: #00c4cc 
+
+LIGHT - 
+#10F1FB	#01F3FF
+
+DARK - 
+#008A91	#006D72
+
+---*/
+
+
+/* ----------------------------------------- */
+/* BASIC SETUP */
+/*------------------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html, 
+body {
+    background-color: #fff;
+    color: #505050;
+    font-family: 'Lato', 'Ariel', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+/* ----------------------------------------- */
+/* REUSABLE COMPONENTS */
+/*------------------------------------------ */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+
+.box {
+    padding: 1%;
+}
+
+/* ---------- BUTTONS ---------- */
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px 30px;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited, 
+input[type=submit] {
+    background-color: #00c4cc;
+    border: 1px solid #00c4cc;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid  #00c4cc;
+    color: #00c4cc;
+}
+
+
+.circle__btn-white:link,
+.circle__btn-white:visited,
+.btn-white:link,
+.btn-white:visited {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #008A91;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active { 
+    border: 1px solid #008A91;
+    background-color: #008A91;
+}
+
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #00c4cc;
+    color: #fff;
+    background-color: #00c4cc;
+}
+
+.circle__btn-white:hover,
+.circle__btn-white:active,
+.btn-white:hover,
+.btn-white:active,
+input[type=submit]:hover,
+input[type=submit]:active { 
+    background-color: #e9e7e7; 
+}
+
+
+
+
+/* --------------- HEADINGS -----------------*/
+
+h1,
+h2, 
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;  
+}
+
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px; 
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px; 
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background: #00c4cc;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+h3 {
+    font-size: 100%;
+}
+
+/* --------------- PARAGRAPHS -----------------*/
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+/* --------------- ICONS -----------------*/
+
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #008A91;
+    margin-bottom: 10px;
+}
+
+/* --------------- SLIDER -----------------*/
+
+
+
+/* ----------------------------------------- */
+/* HEADER */
+/*------------------------------------------ */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.616)), url(/resources/images/minimal-office.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.logo {
+    max-width: 100px;
+    max-height: auto;
+    float: left;
+    margin-top: 10px;
+}
+
+.logo-sticky {
+    display: none;
+    max-width: 55px;
+    max-height: auto;
+    float: left;
+    margin: 5px 0;
+}
+
+
+h3:after {
+    display: block;
+    height: 2px;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.heading-2 {
+    font-size: 120%;
+    text-transform: capitalize;
+}
+
+
+
+/* --------------- NAVIGATION -----------------*/
+
+/*--Main navi--*/
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active { border-bottom: 2px solid #00c4cc; }
+
+/* Mobile navi */
+
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+/*--sticky navi--*/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #f5f5f5;
+    z-index: 9999;
+}
+
+.sticky .main-nav {
+    margin-top: 22px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 20px 0;
+    color: #555;
+}
+
+.sticky .logo { display: none ;}
+.sticky .logo-sticky { display: block ;}
+
+/* ----------------------------------------- */
+/* SERVICES */
+/*------------------------------------------ */
+
+.section-services .long-copy {
+    margin-bottom: 30px;
+}
+
+/* ----------------------------------------- */
+/* PARTNER LOGOS */
+/*------------------------------------------ */
+
+.section-logos {
+    background-color: #f5f5f5;
+    padding: 0;
+    max-height: 100px;
+    padding: 10px 0;
+}
+
+.logos__contain {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.logos__item img {
+    display: block;
+    max-width: 55%;
+    align-items: center;
+    display: flex;
+    filter: grayscale(100%);
+}
+
+.img-gbo {
+    border-radius: 50%;
+}
+
+
+/* ----------------------------------------- */
+/* CALL TO ACTION */
+/*------------------------------------------ */
+
+.section-call-to-action {
+    background-color: #008A91;
+    color: #fff;
+    height: 35vh;
+    padding-left: 115px;
+    padding-right: 115px;
+}
+
+.call-to-action-heading {
+    font-weight: bold;
+    font-size: 200%;
+}
+
+
+
+/* ----------------------------------------- */
+/* VIDEOS */
+/*------------------------------------------ */
+
+#contain {
+    margin: 0 auto;
+    max-width:1200px;
+    width: 100%;
+    text-align: center;
+  }
+
+.owl-carousel {
+    margin-top: 70px;
+}
+
+.item {
+align-items: center;
+  display: flex;
+  width: auto;
+ 
+  justify-content: center;
+}
+
+.owl-nav {
+    color:  #505050;
+    display: inline-block;
+    font-size: 75px;
+    font-weight: bold;
+    height: 60px;
+    margin-top: -30px;
+    text-align: center;
+    width: 40px;
+    transition: 0.3s;
+}
+
+.owl-prev, .owl-next {
+    position: absolute;
+}
+
+.owl-prev {
+    left: -20px;
+    top: 100px;
+}
+
+.owl-next {
+    right: -20px;
+    top: 100px;
+}
+
+/* ----------------------------------------- */
+/* TESTIMONIALS */
+/*------------------------------------------ */
+
+.section-testimonals {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0.726)), url(/resources/css/chairs-2181960_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+}
+
+blockquote {
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+    font-size: 97%;
+}
+
+cite img {
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonial-client-company {
+    font-size:65%;
+    letter-spacing: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.testimonial-client {
+    font-size: 115%;
+    padding-top: 17px;
+}
+
+/* ----------------------------------------- */
+/* CIRCLE */
+/*------------------------------------------ */
+
+.section-circle {
+    height: 550px;
+    width: 550px;
+    background-color: #00c4cc;
+    border-radius: 50%;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .circle__text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+  }
+
+  .circle__text h2 h3 {
+    font-weight: bold;
+  }
+
+  .circle__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+
+/* ----------------------------------------- */
+/* FOOTER */
+/*------------------------------------------ */
+
+  footer {
+    background-color: rgb(75, 75, 75);
+    padding: 50px;
+    font-size: 80%;
+    height: 25vh;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .footer__nav {
+      display: flex;
+      align-items: center;
+  }
+
+  .nav__items {
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav__item a {
+  margin-right: 20px;
+  color: white;
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+}
+
+.social__links {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav__items li a:link,
+.nav__items li a:visited,
+.social__links li a:link,
+.social__links li a:visited {
+    color: rgb(207, 207, 207);
+    transition: color 0.2s;
+}
+
+.nav__items li a:hover,
+.nav__items li a:active,
+.social__links li a:hover,
+.social__links li a:active {
+    color: white;
+    transition: color 0.2s;
+}
+
+.social__link a {
+    font-size: 160%;
+    color: white;
+    margin-right: 20px;
+}
+
+.ion-social-facebook,
+.ion-social-instagram {
+    transition: color 0.2s;
+}
+.ion-social-facebook:hover { color: #3b5998; }
+
+.ion-social-instagram:hover { color: #C32AA3; }
+
+.footer__copyright {
+    margin-top: auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+.footer__text {
+    display: flex;
+    align-items: center;
+    color: rgb(207, 207, 207);;
+}
+
+/* Discovery Page */
+
+.discovery {
+    text-align: center;
+}
+
+.logo-img {
+    max-width: 5%;
+    margin: 1%;
+}
+
+.section-title__discovery {
+    padding: 0;
+}
+
+.section-title__discovery h2:after {
+    background: none;
+}
+
+.section-title__discovery h2 {
+    margin-bottom: 0;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 25%; /* 16:9 */
+    height: 0;
+  }
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.content {
+    padding: 40px 0;
+} 
+
+.video {
+    margin-bottom: 30px;
+}
+
+
+/* Blog Page */
+
+.blog-img {
+    max-width: 100%; 
+    width: 800px;
+    margin: auto;
+  }
+  
+.blog-img::after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(44, 111, 212, 0)rgb(202, 22, 22) 100%);
+    margin-top: -150px;
+    height: 150px;
+    width: 100%;
+    content: '';
+ }
+
+ .blog-body {
+     padding-top: 25px;
+ }
+
+
+ /* Animations */
+
+ .js--wp-1 {
+     opacity: 0;
+ }
+
+ .js--wp-1.animated {
+    opacity: 1;
+ }
